@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <title>O Protocolo Biosfera</title>
+</head>
+<body>
+    <main>
+         <div class="passo ativo" id="passo-33">
+            <p>🌾 O Protocolo Biosfera 🌾</p>
+            <button class="btn-proximo" data-proximo="0">Iniciar</button>
+        </div>
+        <div class="passo" id="passo-0">
+            <img src= "img/image1.png" alt="Imagem gerada por IA, IA utilizada: Chat GPT">
+            <p>O ano é 2026. Mudanças climáticas extremas ameaçam a segurança alimentar do país. Na biblioteca da sua escola, você encontra um tablet criptografado deixado por um cientista desconhecido. A tela exibe um alerta: "O equilíbrio entre a produção em larga escala e a preservação ambiental foi decifrado. Deixo aqui as coordenadas do 'Protocolo Biosfera'. Siga as pistas antes que o solo se esgote." O primeiro ponto do mapa se divide em duas realidades agrícolas do país. Para onde você vai?</p>
+            <button class="btn-proximo" data-proximo="1" onclick="proximoPasso1()">Investigar o polo de Alta Produtividade de Grãos (Grande Escala)</button>
+            <button class="btn-proximo" data-proximo="2" onclick="proximoPasso1()">Investigar o Cinturão Verde Cooperativo (Pequena Escala / Hortifrúti)</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você desembarca em uma plantação de soja que se perde no horizonte. O calor é sufocante. O cientista deixou um enigma no sistema: "Para alimentar uma população crescente, o Agro precisa ser forte, mas o segredo da força não está no que jogamos na terra, e sim no que deixamos nela. Tempestades severas estão previstas para amanhã. Proteja a estrutura física e microbiana deste solo contra a erosão imediatamente." Qual técnica de manejo você ativa no sistema da fazenda?</p>
+            <button class="btn-proximo" data-proximo="3" onclick="proximoPasso1()">Ativar o Plantio Direto na palha e iniciar a rotação de culturas</button>
+            <button class="btn-proximo" data-proximo="4" onclick="proximoPasso0()">Iniciar a aração mecânica profunda para revirar a terra e enterrar os restos secos</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Você chega a uma cooperativa de agricultura familiar que abastece hospitais e escolas da região. O ar aqui é mais fresco, mas as estufas de tomates estão sob ataque massivo da lagarta Helicoverpa armigera. Uma mensagem gravada do cientista avisa: "Se usarmos veneno químico pesado aqui, mataremos as pragas, mas os resíduos contaminarão a água da comunidade e eliminarão as abelhas, que polinizam 75% das culturas agrícolas humanas. Precisamos repelir o ataque mantendo o equilíbrio biológico." Qual estratégia você escolhe?</p>
+            <button class="btn-proximo" data-proximo="5" onclick="proximoPasso1()">Liberar microvespas Trichogramma nas estufas (Controle Biológico)</button>
+            <button class="btn-proximo" data-proximo="6" onclick="proximoPasso0()">Aplicar uma carga emergencial de inseticida químico de amplo espectro</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>O simulador da fazenda mostra o resultado em tempo real: a palhada da colheita anterior cria uma "colcha de proteção" sobre o solo. Quando a tempestade cai, a água não arrasta a terra (evitando a erosão), mantém a umidade subterrânea e alimenta fungos benéficos que fixam nitrogênio naturalmente, reduzindo a necessidade de fertilizantes químicos sintéticos. Uma nova coordenada pisca na tela: o laboratório de Recursos Hídricos.</p>
+            <button class="btn-proximo" data-proximo="7" onclick="proximoPasso1()">Seguir para o Centro de Monitoramento de Recursos Hídricos</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <p>A aração triturou a estrutura do solo e o deixou completamente exposto. Quando a tempestade chega, a água arrasta a camada mais fértil da terra (rica em matéria orgânica), causando voçorocas e assoreando o rio vizinho. O solo compacta, as plantas sufocam sem oxigênio nas raízes e a produtividade desaba. O sistema trava. Você falhou na missão de sustentabilidade e precisa corrigir o manejo do solo.</p>
+            <button class="btn-proximo" data-proximo="1" onclick="proximoPasso0()">Tentar novamente</button>
+        </div>
+         <div class="passo" id="passo-5">
+            <p>Dispositivos liberam milhares de microvespas. Elas procuram os ovos das lagartas e colocam seus próprios ovos dentro deles, interrompendo o ciclo da praga sem usar uma única gota de veneno. O Manejo Integrado de Pragas (MIP) funciona, a biodiversidade de polinizadores é salva e o alimento colhido é 100% seguro. Como recompensa, o sistema libera o acesso para a tecnologia mais avançada do cientista: a fazenda integrada ILPF.</p>
+            <button class="btn-proximo" data-proximo="7" onclick="proximoPasso1()">Viajar para a Estação Experimental de ILPF</button>
+        </div>
+         <div class="passo" id="passo-6">
+            <p>O inseticida elimina as lagartas, mas também mata instantaneamente as joaninhas e abelhas da região. Sem abelhas, as flores dos tomateiros não são polinizadas, impedindo o nascimento de novos frutos. Para piorar, as poucas lagartas sobreviventes desenvolvem resistência química e retornam duas vezes mais fortes, gerando um colapso financeiro e ambiental na cooperativa.</p>
+            <button class="btn-proximo" data-proximo="5" onclick="proximoPasso0()">Reiniciar o protocolo da cooperativa e adotar o Controle Biológico</button>
+        </div>
+        <div class="passo" id="passo-7">
+            <p>As duas pistas se unem em uma paisagem impressionante: a Estação ILPF (Integração Lavoura-Pecuária-Floresta). Em uma mesma área, você vê fileiras de árvores nativas, gado pastando na sombra e plantações crescendo. O tablet do cientista emite um bipe de energia baixa: "Você chegou ao coração do agro sustentável. As árvores retêm o carbono da atmosfera, mitigando o efeito estufa, e o gado fertiliza a terra. Mas o clima está instável e uma seca severa se aproxima. Como você gerenciará a água para salvar a safra?"</p>
+            <button class="btn-proximo" data-proximo="8" onclick="proximoPasso1()">Ativar a Irrigação de Precisão por gotejamento conectada a sensores subterrâneos</button>
+            <button class="btn-proximo" data-proximo="9" onclick="proximoPasso0()">Ligar os canhões de aspersão tradicionais para inundar os campos de forma contínua</button>
+        </div>
+         <div class="passo" id="passo-8">
+            <p>Os sensores medem a evapotranspiração da planta e a umidade exata do solo, liberando gotas d'água direto na raiz apenas quando necessário. Essa eficiência economiza 45% de água dos mananciais e gasta menos energia elétrica. As árvores da ILPF ajudam a bombear água profunda para a superfície através de suas raízes, criando um microclima protegido. O tablet decodifica o arquivo final do projeto!</p>
+            <button class="btn-proximo" data-proximo="10" onclick="proximoPasso2()">Executar o "Protocolo Biosfera" e salvar o futuro do campo</button>
+        </div>
+        <div class="passo" id="passo-9">
+            <p>Os canhões lançam jatos massivos de água nas horas mais quentes do dia. Resultado: mais da metade da água evapora antes de tocar o chão. O excesso de umidade na superfície cria fungos nas folhas e "lava" os nutrientes para longe das raízes (lixiviação). A água do reservatório local se esgota rapidamente, deixando a fazenda vulnerável à seca e sem recursos para a próxima estação.</p>
+            <button class="btn-proximo" data-proximo="11" onclick="proximoPasso0()">Substituir o sistema de aspersão pela tecnologia de gotejamento de precisão</button>
+        </div>
+        <div class="passo" id="passo-10">
+            <img src= "img/image2.png" alt="Imagem gerada por IA, IA utilizada: Chat GPT">
+            <p>O tablet exibe os dados consolidados: alta produtividade por hectare, emissão de carbono negativa (graças às árvores e ao plantio direto) e preservação total das APPs (Áreas de Preservação Permanente) ao redor dos rios. Você provou que o Agro Forte não destrói a natureza, ele se alia a ela através da ciência. O protocolo é enviado para produtores de todo o país. Você venceu o jogo e salvou o futuro sustentável!</p>
+        </div>
+        <div class="passo" id="passo-11">
+            <p>Ao instalar os sensores de precisão e o gotejamento, você interrompe o desperdício de água. O solo recupera o equilíbrio hidrodinâmico e as plantas voltam a respirar, abrindo caminho para a ativação do banco de dados final da fazenda modelo.</p>
+            <button class="btn-proximo" data-proximo="10" onclick="proximoPasso2()">Executar o "Protocolo Biosfera" e salvar o futuro do campo</button>
+        </div>
+        </div>
+    </main>
+     <footer>
+    <p style="font-size: 10px; text-align:justify;">2026 | AGRINHO</p>
+</footer> 
+<script src="script.js"></script>
+</body>
+</html>
